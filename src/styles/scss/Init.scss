@@ -33,3 +33,32 @@ li {
   padding: 0;
   margin: 0;
 }
+
+input[type=date],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week] {
+  padding: .8125rem 1.125rem;
+  background-color: $white;
+  border-radius: 0;
+  border: 1px solid $grey;
+  color: $mainFont;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

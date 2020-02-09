@@ -1,0 +1,101 @@
+@import "./module/Color.scss";
+
+.page-header-hero-image {
+  background-image: url("../../assets/image/hero-image-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  outline: 2px solid $white;
+  outline-offset: -1rem;
+}
+
+.main-search {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-57%);
+  transform: translateY(-57%);
+  padding: 0 0.25rem;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 78.75rem;
+  display: inline-block;
+  background-color: white;
+  width: 65%;
+}
+
+.floating-title {
+  display: inline-block;
+  background-color: $primaryYellow;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.125rem;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 0.5rem 1.25rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+.inner-container {
+  background-color: #fff;
+  position: relative;
+  padding: 1.375rem 0.625rem 2.9375rem;
+
+  @media only screen and (min-width: 768px) {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
+
+  @media only screen and (min-width: 992px) {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
+}
+
+.heading {
+  color: $primaryYellow;
+  font-family: "Amatic SC", serif;
+  font-size: 45px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main-search form {
+  position: relative
+}
+
+.main-search input {
+  width: 100%;
+}
+
+.main-search button {
+  float: right;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+.search-icon {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: $mainFont;
+  background-color: unset;
+  outline: none;
+}
