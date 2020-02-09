@@ -6,26 +6,26 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: 'babel-loader' 
+        use: "babel-loader"
       },
       {
         test: /\.scss$/,
-        use: [ 
-          'style-loader', 
-          'css-loader', 
-          'sass-loader' 
-        ] 
+        use: ["style-loader", "css-loader", "sass-loader"]
       },
+      {
+        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        use: "url-loader?limit=100000"
+      }
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ["*", ".js", ".jsx"]
   },
   plugins: [
     new HTMLWebPackPlugin({
-      hash: true, 
-      template: "./public/index.html",
+      hash: true,
+      template: "./public/index.html"
     })
   ],
-  devtool: 'cheap-module-eval-source-map'
-}
+  devtool: "cheap-module-eval-source-map"
+};
