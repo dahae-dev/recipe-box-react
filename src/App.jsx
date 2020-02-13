@@ -1,13 +1,14 @@
 import React from "react";
-import { Header, PageHeader } from "./components";
-import "./styles";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Home } from "./components";
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <PageHeader />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" component={Home} exact />
+      </Switch>
+    </Router>
   );
 };
 
