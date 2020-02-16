@@ -1,4 +1,5 @@
-import './scss/Init.scss';
-import './scss/App.scss';
+import "./scss/Init.scss";
+import "./scss/App.scss";
 
-import './scss/Header.scss';
+import "./scss/HeroSection.scss";
+import "./scss/CategorySection.scss";

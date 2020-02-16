@@ -1,12 +1,13 @@
-// 헤더 푸터
-import Header from "./header/Header";
-import PageHeader from "./header/PageHeader";
-
-// Home
 import Home from "./Home";
+import Header from "./Header";
+import HeroSection from "./HeroSection";
+import CategorySection from "./CategorySection";
+import ImageCard from "./ImageCard";
 
 export {
-  Header,
-  PageHeader,
   Home,
+  Header,
+  HeroSection,
+  CategorySection,
+  ImageCard,
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-const PageHeader = () => {
+const HeroSection = () => {
   return (
     <div className="page-header-home">
       <div className="page-header-hero-image">
@@ -26,4 +26,4 @@ const PageHeader = () => {
   );
 };
 
-export default PageHeader;
+export default HeroSection;

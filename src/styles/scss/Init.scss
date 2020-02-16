@@ -57,6 +57,10 @@ input[type=week] {
   line-height: 1.5rem;
 }
 
+input:focus {
+  outline: none;
+}
+
 :before,
 :after {
   -webkit-box-sizing: border-box;
