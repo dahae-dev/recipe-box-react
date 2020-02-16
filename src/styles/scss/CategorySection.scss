@@ -18,13 +18,17 @@
   
   .row {
     display: flex;
+    justify-content: center;
 
     .card {
-      margin-right: 1rem;
       outline: 2px solid $white;
       outline-offset: -1rem;
       position: relative;
       cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
 
       img {
         width: 100%;
